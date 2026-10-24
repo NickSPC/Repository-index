@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 document.addEventListener("DOMContentLoaded", () => {
   "use strict";
 
@@ -593,3 +594,13 @@ document.addEventListener("DOMContentLoaded", () => {
   renderizarTodo();
   mostrarPanel("poo");
 });
+=======
+document.querySelectorAll('.nav-item').forEach(function (item) {
+  item.addEventListener('click', function () {
+    document.querySelectorAll('.nav-item').forEach(function (i) { i.classList.remove('active'); });
+    document.querySelectorAll('.materia-panel').forEach(function (p) { p.classList.remove('active'); });
+    item.classList.add('active');
+    document.getElementById('panel-' + item.dataset.target).classList.add('active');
+  });
+});
+>>>>>>> effe751d26b727f914ce59d6e4eb442d3f841c57
