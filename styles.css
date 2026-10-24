@@ -1,0 +1,672 @@
+/* ========================================
+   1. VARIABLES Y RESET
+======================================== */
+
+:root {
+  --bg: #14141c;
+  --surface: #191922;
+  --surface-hover: #20202b;
+  --line: #2a2a3a;
+
+  --text: #ededf4;
+  --text-dim: #8e8ea3;
+
+  --amber: #ffb454;
+  --mint: #6ee7b7;
+  --sky: #7aa2ff;
+
+  --mono: "IBM Plex Mono", "Courier New", monospace;
+  --sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: env(safe-area-inset-top, 0px);
+}
+
+body {
+  min-height: 100dvh;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button {
+  color: inherit;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--mint);
+  outline-offset: 3px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.prompt {
+  color: var(--mint);
+}
+
+/* ========================================
+   2. ESTRUCTURA GENERAL
+======================================== */
+
+.app {
+  display: flex;
+  min-height: 100dvh;
+}
+
+/* ========================================
+   3. BARRA LATERAL
+======================================== */
+
+.sidebar {
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  flex: 0 0 300px;
+  flex-direction: column;
+  gap: 26px;
+
+  width: 300px;
+  height: 100dvh;
+  overflow-y: auto;
+
+  padding: calc(32px + env(safe-area-inset-top, 0px)) 26px
+    calc(24px + env(safe-area-inset-bottom, 0px));
+
+  background: var(--surface);
+  border-right: 1px solid var(--line);
+
+  scrollbar-width: thin;
+  scrollbar-color: var(--line) transparent;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 999px;
+}
+
+.sidebar-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.cube-scene {
+  display: grid;
+  flex: 0 0 46px;
+  place-items: center;
+
+  width: 46px;
+  height: 46px;
+}
+
+.cube-svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+
+  filter: drop-shadow(0 5px 6px rgb(0 0 0 / 25%))
+    drop-shadow(0 10px 12px rgb(0 0 0 / 18%));
+}
+
+.wordmark {
+  color: var(--text);
+  font-family: var(--mono);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.sidebar-tagline {
+  margin: 0;
+  color: var(--text-dim);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* ========================================
+   4. NAVEGACIÓN
+======================================== */
+
+.materia-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  width: 100%;
+  padding: 12px 10px;
+
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+
+  color: var(--text-dim);
+  text-align: left;
+  cursor: pointer;
+
+  transition:
+    background 120ms ease,
+    color 120ms ease,
+    transform 120ms ease;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background: var(--surface-hover);
+  color: var(--text);
+}
+
+.nav-item:active {
+  transform: translateY(1px);
+}
+
+.nav-dot {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.nav-dot-amber {
+  background: var(--amber);
+}
+
+.nav-dot-mint {
+  background: var(--mint);
+}
+
+.nav-dot-sky {
+  background: var(--sky);
+}
+
+.nav-text {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.nav-title {
+  overflow: hidden;
+  color: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+}
+
+.nav-count {
+  color: var(--text-dim);
+  font-family: var(--mono);
+  font-size: 11px;
+}
+
+/* Submenú de Diseño de Software */
+
+.nav-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nav-chevron {
+  flex-shrink: 0;
+  margin-left: auto;
+  font-size: 12px;
+  transition: transform 180ms ease;
+}
+
+#diseno-toggle[aria-expanded="true"] .nav-chevron {
+  transform: rotate(180deg);
+}
+
+.nav-submenu {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-left: 18px;
+}
+
+.nav-subitem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  width: 100%;
+  padding: 10px 12px;
+
+  border: 0;
+  border-left: 2px solid var(--line);
+  border-radius: 0 8px 8px 0;
+
+  background: transparent;
+  color: var(--text-dim);
+
+  font-size: 13px;
+  text-align: left;
+  cursor: pointer;
+
+  transition:
+    background 120ms ease,
+    color 120ms ease,
+    border-color 120ms ease;
+}
+
+.nav-subitem:hover,
+.nav-subitem.active {
+  background: var(--surface-hover);
+  color: var(--text);
+}
+
+.nav-subitem.active {
+  border-left-color: var(--mint);
+}
+
+.nav-subitem-title {
+  min-width: 0;
+}
+
+.nav-subitem > span:last-child {
+  flex-shrink: 0;
+  color: var(--text-dim);
+  font-family: var(--mono);
+  font-size: 11px;
+}
+
+/* Pie de la barra lateral */
+
+.sidebar-footer {
+  margin-top: auto;
+  padding-top: 16px;
+
+  border-top: 1px solid var(--line);
+
+  color: var(--text-dim);
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+/* ========================================
+   5. CONTENIDO PRINCIPAL
+======================================== */
+
+.main {
+  flex: 1;
+  min-width: 0;
+  padding: calc(56px + env(safe-area-inset-top, 0px)) 64px 80px;
+}
+
+.main-header {
+  max-width: 900px;
+  margin-bottom: 36px;
+}
+
+.main-title {
+  margin: 0 0 12px;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+.main-meta {
+  margin: 0;
+  color: var(--text-dim);
+  font-family: var(--mono);
+  font-size: 13px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+.meta-sep {
+  margin: 0 8px;
+  color: var(--line);
+}
+
+/* Los paneles inactivos nunca deben mostrarse. */
+
+.materia-panel {
+  display: none;
+}
+
+.materia-panel.active {
+  display: block;
+}
+
+.materia-panel[hidden] {
+  display: none !important;
+}
+
+/* ========================================
+   6. CUADRÍCULA Y TARJETAS
+======================================== */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  gap: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  min-width: 0;
+  padding: 20px;
+
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: var(--surface);
+
+  color: inherit;
+  text-decoration: none;
+
+  transition:
+    border-color 120ms ease,
+    transform 120ms ease,
+    background 120ms ease,
+    box-shadow 120ms ease;
+}
+
+a.card:hover {
+  transform: translateY(-2px);
+  border-color: var(--mint);
+  background: var(--surface-hover);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 16%);
+}
+
+a.card:focus-visible {
+  outline: 2px solid var(--mint);
+  outline-offset: 3px;
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.card-num {
+  color: var(--text-dim);
+  font-family: var(--mono);
+  font-size: 13px;
+}
+
+.card-tag {
+  padding: 3px 9px;
+
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--bg);
+
+  color: var(--text-dim);
+  font-family: var(--mono);
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+}
+
+.card-desc {
+  flex-grow: 1;
+  margin: 0;
+
+  color: var(--text-dim);
+  font-size: 13px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+.card-go {
+  color: var(--text-dim);
+  font-family: var(--mono);
+  font-size: 12px;
+}
+
+a.card:hover .card-go {
+  color: var(--mint);
+}
+
+/* Tarjetas informativas sin repositorio asociado. */
+
+.card-pending {
+  border-style: dashed;
+}
+
+.card-pending .card-go {
+  color: var(--text-dim);
+}
+
+/* ========================================
+   7. TABLET Y PANTALLAS PEQUEÑAS
+======================================== */
+
+@media (max-width: 900px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: relative;
+    flex: 0 0 auto;
+    gap: 16px;
+
+    width: 100%;
+    height: auto;
+    overflow: visible;
+
+    padding: 18px 20px;
+
+    border-right: 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .cube-scene {
+    flex-basis: 42px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .sidebar-tagline {
+    display: none;
+  }
+
+  .materia-nav {
+    flex: 1;
+    flex-direction: row;
+    gap: 6px;
+
+    min-width: 0;
+    padding-top: 0;
+    border-top: 0;
+
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .materia-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-item {
+    flex-shrink: 0;
+    width: auto;
+    padding: 8px 12px;
+    border: 1px solid var(--line);
+    border-radius: 20px;
+  }
+
+  .nav-item.active {
+    border-color: var(--mint);
+  }
+
+  .nav-count {
+    display: none;
+  }
+
+  .nav-title {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  .sidebar-footer {
+    display: none;
+  }
+
+  .nav-group {
+    flex-shrink: 0;
+  }
+
+  .nav-submenu {
+    position: absolute;
+    z-index: 10;
+    top: calc(100% + 8px);
+    left: 0;
+
+    width: max-content;
+    min-width: 190px;
+    max-width: min(260px, calc(100vw - 32px));
+    padding: 8px;
+
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    background: var(--surface);
+    box-shadow: 0 12px 28px rgb(0 0 0 / 30%);
+  }
+
+  .nav-subitem {
+    border-radius: 6px;
+  }
+
+  .main {
+    padding: 32px 20px 60px;
+  }
+
+  .main-title {
+    font-size: 26px;
+  }
+
+  .main-header {
+    margin-bottom: 28px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr));
+  }
+}
+
+/* ========================================
+   8. MÓVILES
+======================================== */
+
+@media (max-width: 600px) {
+  .sidebar {
+    gap: 12px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  .sidebar-top {
+    gap: 10px;
+  }
+
+  .cube-scene {
+    flex-basis: 38px;
+    width: 38px;
+    height: 38px;
+  }
+
+  .wordmark {
+    font-size: 14px;
+  }
+
+  .main {
+    padding: 28px 16px 48px;
+  }
+
+  .main-title {
+    font-size: 24px;
+  }
+
+  .main-meta {
+    font-size: 12px;
+  }
+
+  .meta-sep {
+    margin: 0 4px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+}
+
+/* ========================================
+   9. MOVIMIENTO REDUCIDO
+======================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  .card:hover,
+  .nav-item:active {
+    transform: none;
+  }
+}

@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Índice de ejercicios de Programación Orientada a Objetos, Diseño de Software y Computación en la Nube."
+    />
+
+    <meta name="theme-color" content="#14141c" />
+    <title>Índice de ejercicios | Nicolás Ramírez</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="app">
+      <aside class="sidebar">
+        <div class="sidebar-top">
+          <div class="cube-scene">
+            <svg
+              class="cube-svg"
+              viewBox="0 0 120 120"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Cubo Rubik"
+            >
+              <defs>
+                <filter
+                  id="cube-shadow"
+                  x="-30%"
+                  y="-30%"
+                  width="160%"
+                  height="160%"
+                >
+                  <feDropShadow
+                    dx="0"
+                    dy="5"
+                    stdDeviation="4"
+                    flood-color="#000"
+                    flood-opacity=".45"
+                  />
+                </filter>
+              </defs>
+
+              <g
+                filter="url(#cube-shadow)"
+                stroke="#0b0b10"
+                stroke-width="1.4"
+                stroke-linejoin="round"
+              >
+                <polygon points="60,8 108,32 60,56 12,32" fill="#f4f4f7" />
+
+                <polygon points="60,11 75,18.5 60,26 45,18.5" fill="#ffd500" />
+                <polygon points="75,18.5 90,26 75,33.5 60,26" fill="#ffffff" />
+                <polygon points="90,26 105,33.5 90,41 75,33.5" fill="#ffd500" />
+                <polygon points="45,18.5 60,26 45,33.5 30,26" fill="#ffffff" />
+                <polygon points="60,26 75,33.5 60,41 45,33.5" fill="#ffd500" />
+                <polygon points="75,33.5 90,41 75,48.5 60,41" fill="#ffffff" />
+                <polygon points="30,26 45,33.5 30,41 15,33.5" fill="#ffd500" />
+                <polygon points="45,33.5 60,41 45,48.5 30,41" fill="#ffffff" />
+                <polygon points="60,41 75,48.5 60,56 45,48.5" fill="#ffd500" />
+
+                <polygon points="12,32 60,56 60,112 12,88" fill="#009e60" />
+                <polygon points="15,35 30,42.5 30,60.5 15,53" fill="#009e60" />
+                <polygon points="30,42.5 45,50 45,68 30,60.5" fill="#1e50a2" />
+                <polygon points="45,50 60,57.5 60,75.5 45,68" fill="#009e60" />
+                <polygon points="15,53 30,60.5 30,78.5 15,71" fill="#1e50a2" />
+                <polygon points="30,60.5 45,68 45,86 30,78.5" fill="#009e60" />
+                <polygon points="45,68 60,75.5 60,93.5 45,86" fill="#1e50a2" />
+                <polygon points="15,71 30,78.5 30,96.5 15,89" fill="#009e60" />
+                <polygon points="30,78.5 45,86 45,104 30,96.5" fill="#1e50a2" />
+                <polygon
+                  points="45,86 60,93.5 60,111.5 45,104"
+                  fill="#009e60"
+                />
+
+                <polygon points="60,56 108,32 108,88 60,112" fill="#1e50a2" />
+                <polygon points="60,57.5 75,50 75,68 60,75.5" fill="#ff6b00" />
+                <polygon points="75,50 90,42.5 90,60.5 75,68" fill="#c8102e" />
+                <polygon
+                  points="90,42.5 105,35 105,53 90,60.5"
+                  fill="#ff6b00"
+                />
+                <polygon points="60,75.5 75,68 75,86 60,93.5" fill="#c8102e" />
+                <polygon points="75,68 90,60.5 90,78.5 75,86" fill="#ff6b00" />
+                <polygon
+                  points="90,60.5 105,53 105,71 90,78.5"
+                  fill="#c8102e"
+                />
+                <polygon
+                  points="60,93.5 75,86 75,104 60,111.5"
+                  fill="#ff6b00"
+                />
+                <polygon points="75,86 90,78.5 90,96.5 75,104" fill="#c8102e" />
+                <polygon
+                  points="90,78.5 105,71 105,89 90,96.5"
+                  fill="#ff6b00"
+                />
+              </g>
+            </svg>
+          </div>
+
+          <div class="wordmark">~/Ramirez Nicolás</div>
+        </div>
+
+        <p class="sidebar-tagline">Índice de ejercicios y proyectos</p>
+
+        <nav class="materia-nav" aria-label="Navegación principal">
+          <button
+            class="nav-item active"
+            type="button"
+            data-target="poo"
+            aria-current="page"
+          >
+            <span class="nav-dot nav-dot-amber" aria-hidden="true"></span>
+            <span class="nav-text">
+              <span class="nav-title">Programación Orientada a Objetos</span>
+              <span class="nav-count">10 ejercicios</span>
+            </span>
+          </button>
+
+          <div class="nav-group">
+            <button
+              class="nav-item"
+              id="diseno-toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="diseno-submenu"
+            >
+              <span class="nav-dot nav-dot-mint" aria-hidden="true"></span>
+              <span class="nav-text">
+                <span class="nav-title">Diseño de Software</span>
+                <span class="nav-count">3 patrones · 60 ejercicios</span>
+              </span>
+              <span class="nav-chevron" aria-hidden="true">⌄</span>
+            </button>
+
+            <div class="nav-submenu" id="diseno-submenu" hidden>
+              <button class="nav-subitem" type="button" data-target="singleton">
+                <span class="nav-subitem-title">Patrón Singleton</span>
+                <span>20</span>
+              </button>
+
+              <button class="nav-subitem" type="button" data-target="factory">
+                <span class="nav-subitem-title">Patrón Factory Method</span>
+                <span>20</span>
+              </button>
+
+              <button class="nav-subitem" type="button" data-target="observer">
+                <span class="nav-subitem-title">Patrón Observer</span>
+                <span>20</span>
+              </button>
+            </div>
+          </div>
+
+          <button class="nav-item" type="button" data-target="nube">
+            <span class="nav-dot nav-dot-sky" aria-hidden="true"></span>
+            <span class="nav-text">
+              <span class="nav-title">Computación en la Nube</span>
+              <span class="nav-count">1 proyecto</span>
+            </span>
+          </button>
+        </nav>
+
+        <div class="sidebar-footer">
+          <span class="prompt">➜</span> portfolio / ejercicios<br />
+          <span>Java · Diseño · Cloud</span>
+        </div>
+      </aside>
+
+      <main class="main">
+        <header class="main-header">
+          <h1 class="main-title" id="materia-titulo">
+            Programación Orientada a Objetos
+          </h1>
+          <p class="main-meta" id="materia-meta" aria-live="polite"></p>
+        </header>
+
+        <section
+          class="materia-panel active"
+          id="panel-poo"
+          aria-labelledby="materia-titulo"
+        >
+          <div class="grid" id="grid-poo"></div>
+        </section>
+
+        <section
+          class="materia-panel"
+          id="panel-singleton"
+          aria-labelledby="materia-titulo"
+          hidden
+        >
+          <div class="grid" id="grid-singleton"></div>
+        </section>
+
+        <section
+          class="materia-panel"
+          id="panel-factory"
+          aria-labelledby="materia-titulo"
+          hidden
+        >
+          <div class="grid" id="grid-factory"></div>
+        </section>
+
+        <section
+          class="materia-panel"
+          id="panel-observer"
+          aria-labelledby="materia-titulo"
+          hidden
+        >
+          <div class="grid" id="grid-observer"></div>
+        </section>
+
+        <section
+          class="materia-panel"
+          id="panel-nube"
+          aria-labelledby="materia-titulo"
+          hidden
+        >
+          <div class="grid" id="grid-nube"></div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
