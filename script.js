@@ -168,7 +168,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Gestor de temas y apariencia visual",
           descripcion:
             "Implementación de un Singleton para centralizar el tema visual de la aplicación y permitir consultar y modificar la apariencia desde cualquier componente.",
-          url: null,
+          url: "https://github.com/Niko07ds/2.E.1-Ejercitacion-Ejercicio06",
         },
         {
           numero: "Singleton / 2-E-1 / 07",
@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Cola de impresión centralizada",
           descripcion:
             "Implementación de un Singleton para administrar una cola compartida de trabajos de impresión, procesarlos en orden y controlar el acceso concurrente.",
-          url: null,
+          url: "https://github.com/Niko07ds/2.E.1-Ejercitacion-Ejercicio07",
         },
         {
           numero: "Singleton / 2-E-1 / 08",
@@ -184,7 +184,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Refactorización hacia inyección de dependencias",
           descripcion:
             "Refactorización de un Singleton de pasarela de pago para conservar una única instancia e inyectarla mediante constructores, reduciendo el acoplamiento y facilitando las pruebas unitarias.",
-          url: null,
+          url: "https://github.com/Niko07ds/2.E.1-Ejercitacion-Ejercicio08",
         },
         {
           numero: "Singleton / 2-E-1 / 09",
@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Sistema de monitoreo de métricas de rendimiento",
           descripcion:
             "Implementación de un Singleton para recopilar y consolidar métricas de rendimiento, sincronizar el acceso concurrente y controlar la capacidad de almacenamiento.",
-          url: null,
+          url: "https://github.com/Niko07ds/2.E.1-Ejercitacion-Ejercicio09",
         },
         {
           numero: "Singleton / 2-E-1 / 10",
@@ -200,7 +200,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Contenedor de estado global y auditoría de seguridad",
           descripcion:
             "Implementación de un Singleton para centralizar una traza de auditoría inmutable, registrar eventos cronológicamente y garantizar la consistencia del estado en entornos multihilo.",
-          url: null,
+          url: "https://github.com/Niko07ds/2.E.1-Ejercitacion-Ejercicio10",
         },
         "Singleton con propiedades",
         "Gestor de recursos",
