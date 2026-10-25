@@ -1,9 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   "use strict";
 
-  // ========================================
   // 1. REFERENCIAS AL DOM
-  // ========================================
 
   const elementos = {
     titulo: document.getElementById("materia-titulo"),
@@ -14,9 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
     submenuDiseno: document.getElementById("diseno-submenu"),
   };
 
-  // ========================================
   // 2. DATOS DE LOS EJERCICIOS
-  // ========================================
 
   const materias = {
     poo: {
@@ -109,9 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
     },
 
-    // ========================================
     // PATRÓN SINGLETON
-    // ========================================
 
     singleton: {
       titulo: "Patrón Singleton",
@@ -202,21 +196,90 @@ document.addEventListener("DOMContentLoaded", () => {
             "Implementación de un Singleton para centralizar una traza de auditoría inmutable, registrar eventos cronológicamente y garantizar la consistencia del estado en entornos multihilo.",
           url: "https://github.com/Niko07ds/2.E.1-Ejercitacion-Ejercicio10",
         },
-        "Singleton con propiedades",
-        "Gestor de recursos",
-        "Singleton y encapsulamiento",
-        "Pruebas de instancia única",
-        "Singleton con dependencias",
-        "Comparación de implementaciones",
-        "Singleton en una aplicación",
-        "Ventajas y desventajas",
-        "Integración final del patrón",
+        {
+          numero: "Singleton / 2-E-2 / 01",
+          etiqueta: "creacional",
+          titulo: "Configuración general de una biblioteca",
+          descripcion:
+            "Implementación de un Singleton para centralizar la configuración de una biblioteca, validar sus atributos y compartir una única instancia entre los módulos de préstamos y consultas.",
+          url: "https://github.com/Niko07ds/2.E.2-Ejercitacion-Ejercicio01",
+        },
+        {
+          numero: "Singleton / 2-E-2 / 02",
+          etiqueta: "creacional",
+          titulo: "Registro centralizado de actividades de la biblioteca",
+          descripcion:
+            "Implementación de un Singleton para registrar, consultar y filtrar las actividades de distintos sectores de una biblioteca mediante un historial compartido.",
+          url: "https://github.com/Niko07ds/2.E.2-Ejercitacion-Ejercicio02",
+        },
+        {
+          numero: "Singleton / 2-E-2 / 03",
+          etiqueta: "creacional",
+          titulo: "Catálogo compartido de libros",
+          descripcion:
+            "Implementación de un Singleton para administrar un catálogo único de libros, permitiendo incorporar, buscar y actualizar ejemplares desde diferentes pantallas.",
+          url: "https://github.com/Niko07ds/2.E.2-Ejercitacion-Ejercicio03",
+        },
+        {
+          numero: "Singleton / 2-E-2 / 04",
+          etiqueta: "creacional",
+          titulo: "Administrador único de préstamos",
+          descripcion:
+            "Implementación de un Singleton para centralizar los préstamos y devoluciones de ejemplares, evitando préstamos duplicados y manteniendo el estado compartido entre mostradores.",
+          url: "https://github.com/Niko07ds/2.E.2-Ejercitacion-Ejercicio04",
+        },
+        {
+          numero: "Singleton / 2-E-2 / 05",
+          etiqueta: "creacional",
+          titulo: "Gestor concurrente de reservas de una sala de lectura",
+          descripcion:
+            "Implementación de un Singleton seguro ante concurrencia para administrar las reservas de una sala de lectura, controlar los cupos disponibles y evitar reservas duplicadas.",
+          url: "https://github.com/Niko07ds/2.E.2-Ejercitacion-Ejercicio05",
+        },
+        {
+          numero: "Singleton / 2-E-2 / 06",
+          etiqueta: "creacional",
+          titulo: "Configuración general de un hospital",
+          descripcion:
+            "Implementación de un Singleton con inicialización diferida para centralizar los parámetros de configuración de un hospital y compartirlos entre recepción y consultorios.",
+          url: null,
+        },
+        {
+          numero: "Singleton / 2-E-2 / 07",
+          etiqueta: "creacional",
+          titulo: "Generador central de números de atención",
+          descripcion:
+            "Implementación de un Singleton para generar números de atención consecutivos y compartir un contador único y un historial entre distintas terminales.",
+          url: null,
+        },
+        {
+          numero: "Singleton / 2-E-2 / 08",
+          etiqueta: "creacional",
+          titulo: "Registro compartido de movimientos de insumos",
+          descripcion:
+            "Implementación de un Singleton para centralizar los movimientos de insumos de distintos sectores, mantener un historial protegido y calcular saldos sin permitir salidas superiores a las existencias.",
+          url: null,
+        },
+        {
+          numero: "Singleton / 2-E-2 / 09",
+          etiqueta: "creacional",
+          titulo: "Cola compartida de impresión administrativa",
+          descripcion:
+            "Implementación de un Singleton seguro ante concurrencia para gestionar una cola compartida de impresión, procesar documentos en orden y evitar pérdidas o duplicaciones de trabajos.",
+          url: null,
+        },
+        {
+          numero: "Singleton / 2-E-2 / 10",
+          etiqueta: "creacional",
+          titulo: "Administrador concurrente de turnos de consultorio",
+          descripcion:
+            "Implementación de un Singleton con operaciones atómicas para administrar agendas médicas, reservar y cancelar turnos y evitar asignaciones duplicadas ante solicitudes concurrentes.",
+          url: null,
+        },
       ],
     },
 
-    // ========================================
     // PATRÓN FACTORY METHOD
-    // ========================================
 
     factory: {
       titulo: "Patrón Factory Method",
@@ -250,9 +313,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
     },
 
-    // ========================================
     // PATRÓN OBSERVER
-    // ========================================
 
     observer: {
       titulo: "Patrón Observer",
@@ -286,9 +347,7 @@ document.addEventListener("DOMContentLoaded", () => {
       ],
     },
 
-    // ========================================
     // COMPUTACIÓN EN LA NUBE
-    // ========================================
 
     nube: {
       titulo: "Computación en la Nube",
@@ -311,9 +370,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const patrones = ["singleton", "factory", "observer"];
 
-  // ========================================
   // 3. UTILIDADES
-  // ========================================
 
   function obtenerPanel(clave) {
     return document.getElementById(`panel-${clave}`);
@@ -339,9 +396,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return elemento;
   }
 
-  // ========================================
   // 4. OBTENER Y PREPARAR EJERCICIOS
-  // ========================================
 
   function obtenerEjercicios(materia, clave) {
     // POO y Nube ya tienen sus datos completos.
@@ -374,9 +429,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ========================================
   // 5. CREAR TARJETAS
-  // ========================================
 
   function crearTarjeta(ejercicio) {
     const tieneUrl =
@@ -433,9 +486,7 @@ document.addEventListener("DOMContentLoaded", () => {
     return tarjeta;
   }
 
-  // ========================================
   // 6. RENDERIZAR LAS MATERIAS
-  // ========================================
 
   function renderizarMateria(clave) {
     const materia = materias[clave];
@@ -460,9 +511,7 @@ document.addEventListener("DOMContentLoaded", () => {
     Object.keys(materias).forEach(renderizarMateria);
   }
 
-  // ========================================
   // 7. ACTUALIZAR EL ENCABEZADO
-  // ========================================
 
   function actualizarEncabezado(clave) {
     const materia = materias[clave];
@@ -507,9 +556,7 @@ document.addEventListener("DOMContentLoaded", () => {
     elementos.meta.appendChild(fragmento);
   }
 
-  // ========================================
   // 8. NAVEGACIÓN ENTRE SECCIONES
-  // ========================================
 
   function mostrarPanel(clave) {
     const panelSeleccionado = obtenerPanel(clave);
@@ -551,9 +598,7 @@ document.addEventListener("DOMContentLoaded", () => {
     actualizarEncabezado(clave);
   }
 
-  // ========================================
   // 9. SUBMENÚ DE DISEÑO DE SOFTWARE
-  // ========================================
 
   function abrirSubmenu() {
     elementos.botonDiseno.setAttribute("aria-expanded", "true");
@@ -576,9 +621,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // ========================================
   // 10. EVENTOS DE NAVEGACIÓN
-  // ========================================
 
   elementos.navegacion.forEach((boton) => {
     boton.addEventListener("click", () => {
@@ -586,9 +629,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // ========================================
   // 11. INICIALIZACIÓN
-  // ========================================
 
   renderizarTodo();
   mostrarPanel("poo");
