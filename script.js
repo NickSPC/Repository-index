@@ -242,7 +242,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Configuración general de un hospital",
           descripcion:
             "Implementación de un Singleton con inicialización diferida para centralizar los parámetros de configuración de un hospital y compartirlos entre recepción y consultorios.",
-          url: null,
+          url: "https://github.com/Niko07ds/2.E.2-Ejercitacion-Ejercicio06",
         },
         {
           numero: "Singleton / 2-E-2 / 07",
@@ -250,7 +250,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Generador central de números de atención",
           descripcion:
             "Implementación de un Singleton para generar números de atención consecutivos y compartir un contador único y un historial entre distintas terminales.",
-          url: null,
+          url: "https://github.com/Niko07ds/2.E.2-Ejercitacion-Ejercicio07",
         },
         {
           numero: "Singleton / 2-E-2 / 08",
@@ -258,7 +258,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Registro compartido de movimientos de insumos",
           descripcion:
             "Implementación de un Singleton para centralizar los movimientos de insumos de distintos sectores, mantener un historial protegido y calcular saldos sin permitir salidas superiores a las existencias.",
-          url: null,
+          url: "https://github.com/Niko07ds/2.E.2-Ejercitacion-Ejercicio08",
         },
         {
           numero: "Singleton / 2-E-2 / 09",
@@ -266,7 +266,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Cola compartida de impresión administrativa",
           descripcion:
             "Implementación de un Singleton seguro ante concurrencia para gestionar una cola compartida de impresión, procesar documentos en orden y evitar pérdidas o duplicaciones de trabajos.",
-          url: null,
+          url: "https://github.com/Niko07ds/2.E.2-Ejercitacion-Ejercicio09",
         },
         {
           numero: "Singleton / 2-E-2 / 10",
@@ -274,7 +274,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Administrador concurrente de turnos de consultorio",
           descripcion:
             "Implementación de un Singleton con operaciones atómicas para administrar agendas médicas, reservar y cancelar turnos y evitar asignaciones duplicadas ante solicitudes concurrentes.",
-          url: null,
+          url: "https://github.com/Niko07ds/2.E.2-Ejercitacion-Ejercicio10",
         },
       ],
     },
