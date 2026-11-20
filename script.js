@@ -290,26 +290,166 @@ document.addEventListener("DOMContentLoaded", () => {
       etiqueta: "creacional",
       descripcionBase: "Ejercicio práctico del patrón Factory Method.",
       ejercicios: [
-        "Factory Method básico",
-        "Creación de productos",
-        "Interfaz de producto",
-        "Creador abstracto",
-        "Creadores concretos",
-        "Notificaciones por distintos canales",
-        "Fábrica de documentos",
-        "Fábrica de vehículos",
-        "Creación de reportes",
-        "Productos intercambiables",
-        "Separación entre creación y uso",
-        "Factory Method con parámetros",
-        "Validación de productos",
-        "Múltiples fábricas concretas",
-        "Integración con interfaces",
-        "Pruebas de creación",
-        "Extensión sin modificar el cliente",
-        "Comparación con Simple Factory",
-        "Aplicación práctica del patrón",
-        "Integración final del patrón",
+        {
+          numero: "Factory / 3-E-1 / 01",
+          etiqueta: "creacional",
+          titulo: "Generador básico de documentos de texto",
+          descripcion:
+            "Implementación del patrón Factory Method para crear diferentes tipos de documentos mediante clases creadoras especializadas, desacoplando la instanciación del código cliente.",
+          url: "https://github.com/Niko07ds/3.E.1-Ejercitacion-Ejercicio01",
+        },
+        {
+          numero: "Factory / 3-E-1 / 02",
+          etiqueta: "creacional",
+          titulo: "Creador de conexiones a motores de base de datos",
+          descripcion:
+            "Implementación de Factory Method para encapsular la creación de conexiones a diferentes motores de bases de datos, utilizando interfaces comunes y creadores concretos especializados.",
+          url: "https://github.com/Niko07ds/3.E.1-Ejercitacion-Ejercicio02",
+        },
+        {
+          numero: "Factory / 3-E-1 / 03",
+          etiqueta: "creacional",
+          titulo: "Sistema de notificaciones multiplataforma básico",
+          descripcion:
+            "Implementación de Factory Method para crear notificadores por correo electrónico y SMS, permitiendo enviar mensajes mediante una interfaz común y factorías especializadas.",
+          url: "https://github.com/Niko07ds/3.E.1-Ejercitacion-Ejercicio03",
+        },
+        {
+          numero: "Factory / 3-E-1 / 04",
+          etiqueta: "creacional",
+          titulo: "Fábrica de exportadores de reportes financieros",
+          descripcion:
+            "Implementación de Factory Method para generar reportes financieros en formatos PDF y CSV, encapsulando la validación de datos y las particularidades de cada exportador.",
+          url: "https://github.com/Niko07ds/3.E.1-Ejercitacion-Ejercicio04",
+        },
+        {
+          numero: "Factory / 3-E-1 / 05",
+          etiqueta: "creacional",
+          titulo: "Generador de personajes para videojuego de rol (Star Wars)",
+          descripcion:
+            "Implementación de Factory Method para crear personajes de diferentes clases, asignando automáticamente sus atributos iniciales, estadísticas de combate y equipamiento correspondiente.",
+          url: "https://github.com/Niko07ds/3.E.1-Ejercitacion-Ejercicio05",
+        },
+        {
+          numero: "Factory / 3-E-1 / 06",
+          etiqueta: "creacional",
+          titulo: "Factoría de métodos de pago para comercio electrónico",
+          descripcion:
+            "Implementación de Factory Method para crear diferentes pasarelas de pago, aplicar sus reglas de validación y comisiones y procesar transacciones mediante una interfaz común.",
+          url: "https://github.com/Niko07ds/3.E.1-Ejercitacion-Ejercicio06",
+        },
+        {
+          numero: "Factory / 3-E-1 / 07",
+          etiqueta: "creacional",
+          titulo: "Generador de elementos de interfaz gráfica adaptativa",
+          descripcion:
+            "Implementación de Factory Method para crear componentes gráficos adaptados a diferentes estilos visuales, garantizando la compatibilidad y coherencia estética de los elementos generados.",
+          url: "https://github.com/Niko07ds/3.E.1-Ejercitacion-Ejercicio07",
+        },
+        {
+          numero: "Factory / 3-E-1 / 08",
+          etiqueta: "creacional",
+          titulo: "Refactorización de código acoplado hacia Factory Method",
+          descripcion:
+            "Refactorización de un sistema de compresión de archivos para reemplazar estructuras condicionales rígidas por factorías especializadas, aplicando polimorfismo, inversión de control y separación de responsabilidades.",
+          url: "https://github.com/Niko07ds/3.E.1-Ejercitacion-Ejercicio08",
+        },
+        {
+          numero: "Factory / 3-E-1 / 09",
+          etiqueta: "creacional",
+          titulo: "Fábrica avanzada de conectores IoT para telemetría",
+          descripcion:
+            "Implementación de Factory Method para crear conectores IoT mediante diferentes protocolos de comunicación, gestionar sus inicializaciones, reconexiones, métricas y registro dinámico de factorías.",
+          url: "https://github.com/Niko07ds/3.E.1-Ejercitacion-Ejercicio09",
+        },
+        {
+          numero: "Factory / 3-E-1 / 10",
+          etiqueta: "creacional",
+          titulo: "Sistema empresarial de emisión de comprobantes fiscales",
+          descripcion:
+            "Implementación de Factory Method para generar comprobantes fiscales electrónicos según las normativas de cada jurisdicción, validando datos tributarios, integridad, autorizaciones y firmas digitales.",
+          url: "https://github.com/Niko07ds/3.E.1-Ejercitacion-Ejercicio10",
+        },
+        {
+          numero: "Factory / 3-E-2 / 11",
+          etiqueta: "creacional",
+          titulo: "Generador básico de perfiles de usuario",
+          descripcion:
+            "Implementación de Factory Method para crear perfiles de estudiantes y docentes, encapsulando la lógica de creación y asignación de roles y permisos mediante clases creadoras especializadas.",
+          url: null,
+        },
+        {
+          numero: "Factory / 3-E-2 / 12",
+          etiqueta: "creacional",
+          titulo: "Creador de conexiones a repositorios de archivos",
+          descripcion:
+            "Implementación de Factory Method para crear conectores de almacenamiento local y en la nube, permitiendo guardar y recuperar archivos mediante una interfaz común.",
+          url: null,
+        },
+        {
+          numero: "Factory / 3-E-2 / 13",
+          etiqueta: "creacional",
+          titulo: "Sistema de alertas por canal de texto",
+          descripcion:
+            "Implementación de Factory Method para crear sistemas de alertas por consola y archivo, centralizando la creación de canales de salida mediante factorías especializadas.",
+          url: null,
+        },
+        {
+          numero: "Factory / 3-E-2 / 14",
+          etiqueta: "creacional",
+          titulo: "Fábrica de generadores de facturas comerciales",
+          descripcion:
+            "Implementación de Factory Method para generar comprobantes comerciales en formato PDF y ticket, encapsulando las reglas de formato y validación de datos monetarios.",
+          url: null,
+        },
+        {
+          numero: "Factory / 3-E-2 / 15",
+          etiqueta: "creacional",
+          titulo: "Generador de enemigos para videojuego de acción",
+          descripcion:
+            "Implementación de Factory Method para crear diferentes tipos de enemigos con atributos de combate y comportamientos tácticos iniciales según la dificultad del videojuego.",
+          url: null,
+        },
+        {
+          numero: "Factory / 3-E-2 / 16",
+          etiqueta: "creacional",
+          titulo: "Factoría de métodos de envío logístico",
+          descripcion:
+            "Implementación de Factory Method para crear servicios de transporte con diferentes tarifas y plazos de entrega, validando destinos y calculando costos según las características del pedido.",
+          url: null,
+        },
+        {
+          numero: "Factory / 3-E-2 / 17",
+          etiqueta: "creacional",
+          titulo: "Generador de componentes de interfaz gráfica minimalista",
+          descripcion:
+            "Implementación de Factory Method para crear componentes gráficos adaptados a diferentes resoluciones de pantalla, garantizando coherencia visual y compatibilidad entre elementos.",
+          url: null,
+        },
+        {
+          numero: "Factory / 3-E-2 / 18",
+          etiqueta: "creacional",
+          titulo: "Refactorización de código condicional hacia Factory Method",
+          descripcion:
+            "Refactorización de un sistema de importación de datos para reemplazar estructuras condicionales rígidas por factorías especializadas, aplicando polimorfismo, inversión de control y separación de responsabilidades.",
+          url: null,
+        },
+        {
+          numero: "Factory / 3-E-2 / 19",
+          etiqueta: "creacional",
+          titulo: "Fábrica avanzada de sensores ambientales para IoT",
+          descripcion:
+            "Implementación de Factory Method para crear conectores de sensores mediante diferentes protocolos de hardware, gestionar inicializaciones, lecturas, métricas y registro dinámico de factorías.",
+          url: null,
+        },
+        {
+          numero: "Factory / 3-E-2 / 20",
+          etiqueta: "creacional",
+          titulo: "Sistema empresarial de emisión de títulos de propiedad",
+          descripcion:
+            "Implementación de Factory Method para generar títulos de propiedad electrónicos según las normativas de cada jurisdicción, validando datos legales, identidad, sellados y firmas digitales.",
+          url: null,
+        },
       ],
     },
 
@@ -324,26 +464,169 @@ document.addEventListener("DOMContentLoaded", () => {
       etiqueta: "comportamiento",
       descripcionBase: "Ejercicio práctico del patrón Observer.",
       ejercicios: [
-        "Observer básico",
-        "Sujeto y observador",
-        "Suscripción a eventos",
-        "Notificación de cambios",
-        "Múltiples observadores",
-        "Alta de observadores",
-        "Baja de observadores",
-        "Notificaciones con datos",
-        "Sistema de alertas",
-        "Notificaciones meteorológicas",
-        "Actualización de interfaz",
-        "Eventos de usuario",
-        "Observer con interfaces",
-        "Manejo de varios eventos",
-        "Orden de notificaciones",
-        "Control de suscripciones",
-        "Pruebas de observadores",
-        "Observer en una aplicación",
-        "Ventajas y limitaciones",
-        "Integración final del patrón",
+        {
+          numero: "Observer / 4-E-1 / 01",
+          etiqueta: "comportamiento",
+          titulo: "Notificador de cambio de temperatura",
+          descripcion:
+            "Implementación básica del patrón Observer para notificar automáticamente a múltiples pantallas cuando cambia la temperatura, permitiendo registrar y desvincular observadores mediante una interfaz común.",
+          url: null,
+        },
+        {
+          numero: "Observer / 4-E-1 / 02",
+          etiqueta: "comportamiento",
+          titulo: "Sincronizador de interfaz para reproductor multimedia",
+          descripcion:
+            "Implementación de Observer para sincronizar distintas vistas de un reproductor multimedia ante cambios de canción o estado de reproducción, evitando consultas periódicas y manteniendo desacoplados los componentes visuales.",
+          url: null,
+        },
+        {
+          numero: "Observer / 4-E-1 / 03",
+          etiqueta: "comportamiento",
+          titulo: "Registro automático de auditoría por consola",
+          descripcion:
+            "Implementación de Observer para distribuir eventos de auditoría hacia módulos de consola y archivos, permitiendo gestionar dinámicamente las suscripciones sin acoplar la lógica de negocio a los sistemas de registro.",
+          url: null,
+        },
+        {
+          numero: "Observer / 4-E-1 / 04",
+          etiqueta: "comportamiento",
+          titulo: "Sistema de alertas de stock bajo para comercio electrónico",
+          descripcion:
+            "Implementación de Observer para detectar niveles críticos de inventario y notificar selectivamente a los departamentos interesados, encapsulando el estado del producto y sus reglas de negocio.",
+          url: null,
+        },
+        {
+          numero: "Observer / 4-E-1 / 05",
+          etiqueta: "comportamiento",
+          titulo: "Monitor de sensores de humo en edificio inteligente",
+          descripcion:
+            "Implementación de Observer para coordinar múltiples sensores de humo con sistemas de alarma, rociadores y conserjería, permitiendo incorporar nuevos dispositivos de respuesta sin modificar los sensores.",
+          url: null,
+        },
+        {
+          numero: "Observer / 4-E-1 / 06",
+          etiqueta: "comportamiento",
+          titulo: "Panel de cotizaciones bursátiles en tiempo real",
+          descripcion:
+            "Implementación de Observer para distribuir actualizaciones de cotizaciones y variaciones porcentuales a múltiples paneles financieros, contemplando la gestión segura de suscriptores en entornos concurrentes.",
+          url: null,
+        },
+        {
+          numero: "Observer / 4-E-1 / 07",
+          etiqueta: "comportamiento",
+          titulo: "Sistema de suscripción a canales de noticias digitales",
+          descripcion:
+            "Implementación de Observer con suscripciones filtradas por categorías temáticas, notificando únicamente a los usuarios interesados cuando se publica una nueva noticia.",
+          url: null,
+        },
+        {
+          numero: "Observer / 4-E-1 / 08",
+          etiqueta: "comportamiento",
+          titulo: "Refactorización de código acoplado hacia el patrón Observer",
+          descripcion:
+            "Refactorización de un sistema de gestión de proyectos para reemplazar dependencias directas por observadores abstractos, aplicando desacoplamiento, interfaces e inversión de control.",
+          url: null,
+        },
+        {
+          numero: "Observer / 4-E-1 / 09",
+          etiqueta: "comportamiento",
+          titulo:
+            "Motor avanzado de eventos para arquitectura de microservicios simulada",
+          descripcion:
+            "Implementación de un bus centralizado de eventos basado en Observer para distribuir mensajes según su tipo, gestionar suscripciones concurrentes y aislar errores individuales durante las notificaciones.",
+          url: null,
+        },
+        {
+          numero: "Observer / 4-E-1 / 10",
+          etiqueta: "comportamiento",
+          titulo:
+            "Sistema empresarial de notificación de riesgos y cumplimiento legal",
+          descripcion:
+            "Implementación de Observer para distribuir cambios de perfiles de riesgo hacia subsistemas regulatorios, incorporando ejecución controlada, auditoría inmutable, aislamiento de errores y gestión multihilo segura.",
+          url: null,
+        },
+        {
+          numero: "Observer / 4-E-2 / 01",
+          etiqueta: "comportamiento",
+          titulo: "Notificador de clic en botón de interfaz",
+          descripcion:
+            "Implementación básica del patrón Observer para notificar a múltiples manejadores cuando se produce un clic en un botón, manteniendo desacoplado el componente gráfico de sus receptores.",
+          url: null,
+        },
+        {
+          numero: "Observer / 4-E-2 / 02",
+          etiqueta: "comportamiento",
+          titulo: "Indicador de estado de conexión de red",
+          descripcion:
+            "Implementación de Observer para sincronizar automáticamente los indicadores visuales del estado de conexión, permitiendo que distintos componentes reaccionen a los cambios sin realizar consultas periódicas.",
+          url: null,
+        },
+        {
+          numero: "Observer / 4-E-2 / 03",
+          etiqueta: "comportamiento",
+          titulo: "Marcador de puntuación para videojuego sencillo",
+          descripcion:
+            "Implementación de Observer para distribuir las actualizaciones de puntuación hacia la interfaz del juego y el sistema de récords, evitando dependencias directas y permitiendo gestionar suscripciones dinámicamente.",
+          url: null,
+        },
+        {
+          numero: "Observer / 4-E-2 / 04",
+          etiqueta: "comportamiento",
+          titulo: "Sistema de alertas de precio en lista de deseos",
+          descripcion:
+            "Implementación de Observer para detectar reducciones en el precio de productos y notificar selectivamente a los canales suscritos, utilizando los porcentajes de descuento para procesar las alertas.",
+          url: null,
+        },
+        {
+          numero: "Observer / 4-E-2 / 05",
+          etiqueta: "comportamiento",
+          titulo: "Automatización de persianas según sensor de luz solar",
+          descripcion:
+            "Implementación de Observer para coordinar persianas motorizadas y luces interiores según las variaciones de luminosidad detectadas por un sensor, permitiendo incorporar nuevos dispositivos sin modificar el sujeto observable.",
+          url: null,
+        },
+        {
+          numero: "Observer / 4-E-2 / 06",
+          etiqueta: "comportamiento",
+          titulo: "Panel financiero de variación de divisas",
+          descripcion:
+            "Implementación de Observer para distribuir cotizaciones y variaciones porcentuales de divisas hacia múltiples herramientas financieras, contemplando una gestión segura de suscriptores ante modificaciones concurrentes.",
+          url: null,
+        },
+        {
+          numero: "Observer / 4-E-2 / 07",
+          etiqueta: "comportamiento",
+          titulo: "Sistema de suscripción a canales de video streaming",
+          descripcion:
+            "Implementación de Observer con suscripciones filtradas por canal, notificando únicamente a los seguidores correspondientes cuando un creador publica un nuevo video.",
+          url: null,
+        },
+        {
+          numero: "Observer / 4-E-2 / 08",
+          etiqueta: "comportamiento",
+          titulo: "Refactorización de código acoplado hacia bus de eventos",
+          descripcion:
+            "Refactorización de un sistema de inventario para reemplazar dependencias directas con módulos de facturación y estadísticas por observadores abstractos, aplicando desacoplamiento e inversión de control.",
+          url: null,
+        },
+        {
+          numero: "Observer / 4-E-2 / 09",
+          etiqueta: "comportamiento",
+          titulo: "Motor asíncrono de eventos para monitoreo de servidores",
+          descripcion:
+            "Implementación de un bus centralizado basado en Observer para distribuir alertas de infraestructura según su categoría, con suscripciones concurrentes, enrutamiento eficiente y aislamiento de errores.",
+          url: null,
+        },
+        {
+          numero: "Observer / 4-E-2 / 10",
+          etiqueta: "comportamiento",
+          titulo:
+            "Sistema empresarial de cumplimiento normativo y auditoría de riesgos",
+          descripcion:
+            "Implementación de Observer para distribuir cambios en perfiles de riesgo hacia sistemas regulatorios, incorporando notificaciones controladas, auditoría inmutable, aislamiento de fallos y gestión multihilo segura.",
+          url: null,
+        },
       ],
     },
 
