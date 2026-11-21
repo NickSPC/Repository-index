@@ -371,47 +371,47 @@ document.addEventListener("DOMContentLoaded", () => {
           url: "https://github.com/Niko07ds/3.E.1-Ejercitacion-Ejercicio10",
         },
         {
-          numero: "Factory / 3-E-2 / 11",
+          numero: "Factory / 3-E-2 / 01",
           etiqueta: "creacional",
           titulo: "Generador básico de perfiles de usuario",
           descripcion:
             "Implementación de Factory Method para crear perfiles de estudiantes y docentes, encapsulando la lógica de creación y asignación de roles y permisos mediante clases creadoras especializadas.",
-          url: null,
+          url: "https://github.com/Niko07ds/3.E.2-Ejercitacion-Ejercicio01",
         },
         {
-          numero: "Factory / 3-E-2 / 12",
+          numero: "Factory / 3-E-2 / 02",
           etiqueta: "creacional",
           titulo: "Creador de conexiones a repositorios de archivos",
           descripcion:
             "Implementación de Factory Method para crear conectores de almacenamiento local y en la nube, permitiendo guardar y recuperar archivos mediante una interfaz común.",
-          url: null,
+          url: "https://github.com/Niko07ds/3.E.2-Ejercitacion-Ejercicio02",
         },
         {
-          numero: "Factory / 3-E-2 / 13",
+          numero: "Factory / 3-E-2 / 03",
           etiqueta: "creacional",
           titulo: "Sistema de alertas por canal de texto",
           descripcion:
             "Implementación de Factory Method para crear sistemas de alertas por consola y archivo, centralizando la creación de canales de salida mediante factorías especializadas.",
-          url: null,
+          url: "https://github.com/Niko07ds/3.E.2-Ejercitacion-Ejercicio03",
         },
         {
-          numero: "Factory / 3-E-2 / 14",
+          numero: "Factory / 3-E-2 / 04",
           etiqueta: "creacional",
           titulo: "Fábrica de generadores de facturas comerciales",
           descripcion:
             "Implementación de Factory Method para generar comprobantes comerciales en formato PDF y ticket, encapsulando las reglas de formato y validación de datos monetarios.",
-          url: null,
+          url: "https://github.com/Niko07ds/3.E.2-Ejercitacion-Ejercicio04",
         },
         {
-          numero: "Factory / 3-E-2 / 15",
+          numero: "Factory / 3-E-2 / 05",
           etiqueta: "creacional",
           titulo: "Generador de enemigos para videojuego de acción",
           descripcion:
             "Implementación de Factory Method para crear diferentes tipos de enemigos con atributos de combate y comportamientos tácticos iniciales según la dificultad del videojuego.",
-          url: null,
+          url: "https://github.com/Niko07ds/3.E.2-Ejercitacion-Ejercicio05",
         },
         {
-          numero: "Factory / 3-E-2 / 16",
+          numero: "Factory / 3-E-2 / 06",
           etiqueta: "creacional",
           titulo: "Factoría de métodos de envío logístico",
           descripcion:
@@ -419,7 +419,7 @@ document.addEventListener("DOMContentLoaded", () => {
           url: null,
         },
         {
-          numero: "Factory / 3-E-2 / 17",
+          numero: "Factory / 3-E-2 / 07",
           etiqueta: "creacional",
           titulo: "Generador de componentes de interfaz gráfica minimalista",
           descripcion:
@@ -427,7 +427,7 @@ document.addEventListener("DOMContentLoaded", () => {
           url: null,
         },
         {
-          numero: "Factory / 3-E-2 / 18",
+          numero: "Factory / 3-E-2 / 08",
           etiqueta: "creacional",
           titulo: "Refactorización de código condicional hacia Factory Method",
           descripcion:
@@ -435,7 +435,7 @@ document.addEventListener("DOMContentLoaded", () => {
           url: null,
         },
         {
-          numero: "Factory / 3-E-2 / 19",
+          numero: "Factory / 3-E-2 / 09",
           etiqueta: "creacional",
           titulo: "Fábrica avanzada de sensores ambientales para IoT",
           descripcion:
@@ -443,7 +443,7 @@ document.addEventListener("DOMContentLoaded", () => {
           url: null,
         },
         {
-          numero: "Factory / 3-E-2 / 20",
+          numero: "Factory / 3-E-2 / 10",
           etiqueta: "creacional",
           titulo: "Sistema empresarial de emisión de títulos de propiedad",
           descripcion:
