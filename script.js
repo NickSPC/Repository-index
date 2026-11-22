@@ -416,7 +416,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Factoría de métodos de envío logístico",
           descripcion:
             "Implementación de Factory Method para crear servicios de transporte con diferentes tarifas y plazos de entrega, validando destinos y calculando costos según las características del pedido.",
-          url: null,
+          url: "https://github.com/Niko07ds/3.E.2-Ejercitacion-Ejercicio06",
         },
         {
           numero: "Factory / 3-E-2 / 07",
@@ -424,7 +424,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Generador de componentes de interfaz gráfica minimalista",
           descripcion:
             "Implementación de Factory Method para crear componentes gráficos adaptados a diferentes resoluciones de pantalla, garantizando coherencia visual y compatibilidad entre elementos.",
-          url: null,
+          url: "https://github.com/Niko07ds/3.E.2-Ejercitacion-Ejercicio07",
         },
         {
           numero: "Factory / 3-E-2 / 08",
@@ -432,7 +432,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Refactorización de código condicional hacia Factory Method",
           descripcion:
             "Refactorización de un sistema de importación de datos para reemplazar estructuras condicionales rígidas por factorías especializadas, aplicando polimorfismo, inversión de control y separación de responsabilidades.",
-          url: null,
+          url: "https://github.com/Niko07ds/3.E.2-Ejercitacion-Ejercicio08",
         },
         {
           numero: "Factory / 3-E-2 / 09",
@@ -440,7 +440,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Fábrica avanzada de sensores ambientales para IoT",
           descripcion:
             "Implementación de Factory Method para crear conectores de sensores mediante diferentes protocolos de hardware, gestionar inicializaciones, lecturas, métricas y registro dinámico de factorías.",
-          url: null,
+          url: "https://github.com/Niko07ds/3.E.2-Ejercitacion-Ejercicio09",
         },
         {
           numero: "Factory / 3-E-2 / 10",
@@ -448,7 +448,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Sistema empresarial de emisión de títulos de propiedad",
           descripcion:
             "Implementación de Factory Method para generar títulos de propiedad electrónicos según las normativas de cada jurisdicción, validando datos legales, identidad, sellados y firmas digitales.",
-          url: null,
+          url: "https://github.com/Niko07ds/3.E.2-Ejercitacion-Ejercicio10",
         },
       ],
     },
