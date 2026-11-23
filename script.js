@@ -510,7 +510,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Panel de cotizaciones bursátiles en tiempo real",
           descripcion:
             "Implementación de Observer para distribuir actualizaciones de cotizaciones y variaciones porcentuales a múltiples paneles financieros, contemplando la gestión segura de suscriptores en entornos concurrentes.",
-          url: null,
+          url: "https://github.com/Niko07ds/4.E.1-Ejercitacion-Ejercicio06",
         },
         {
           numero: "Observer / 4-E-1 / 07",
@@ -518,7 +518,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Sistema de suscripción a canales de noticias digitales",
           descripcion:
             "Implementación de Observer con suscripciones filtradas por categorías temáticas, notificando únicamente a los usuarios interesados cuando se publica una nueva noticia.",
-          url: null,
+          url: "https://github.com/Niko07ds/4.E.1-Ejercitacion-Ejercicio07",
         },
         {
           numero: "Observer / 4-E-1 / 08",
@@ -526,7 +526,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Refactorización de código acoplado hacia el patrón Observer",
           descripcion:
             "Refactorización de un sistema de gestión de proyectos para reemplazar dependencias directas por observadores abstractos, aplicando desacoplamiento, interfaces e inversión de control.",
-          url: null,
+          url: "https://github.com/Niko07ds/4.E.1-Ejercitacion-Ejercicio08",
         },
         {
           numero: "Observer / 4-E-1 / 09",
@@ -535,7 +535,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "Motor avanzado de eventos para arquitectura de microservicios simulada",
           descripcion:
             "Implementación de un bus centralizado de eventos basado en Observer para distribuir mensajes según su tipo, gestionar suscripciones concurrentes y aislar errores individuales durante las notificaciones.",
-          url: null,
+          url: "https://github.com/Niko07ds/4.E.1-Ejercitacion-Ejercicio09",
         },
         {
           numero: "Observer / 4-E-1 / 10",
@@ -544,7 +544,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "Sistema empresarial de notificación de riesgos y cumplimiento legal",
           descripcion:
             "Implementación de Observer para distribuir cambios de perfiles de riesgo hacia subsistemas regulatorios, incorporando ejecución controlada, auditoría inmutable, aislamiento de errores y gestión multihilo segura.",
-          url: null,
+          url: "https://github.com/Niko07ds/4.E.1-Ejercitacion-Ejercicio10",
         },
         {
           numero: "Observer / 4-E-2 / 01",
