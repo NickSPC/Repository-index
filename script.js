@@ -470,7 +470,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Notificador de cambio de temperatura",
           descripcion:
             "Implementación básica del patrón Observer para notificar automáticamente a múltiples pantallas cuando cambia la temperatura, permitiendo registrar y desvincular observadores mediante una interfaz común.",
-          url: null,
+          url: "https://github.com/Niko07ds/4.E.1-Ejercitacion-Ejercicio01",
         },
         {
           numero: "Observer / 4-E-1 / 02",
@@ -478,7 +478,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Sincronizador de interfaz para reproductor multimedia",
           descripcion:
             "Implementación de Observer para sincronizar distintas vistas de un reproductor multimedia ante cambios de canción o estado de reproducción, evitando consultas periódicas y manteniendo desacoplados los componentes visuales.",
-          url: null,
+          url: "https://github.com/Niko07ds/4.E.1-Ejercitacion-Ejercicio02",
         },
         {
           numero: "Observer / 4-E-1 / 03",
@@ -486,7 +486,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Registro automático de auditoría por consola",
           descripcion:
             "Implementación de Observer para distribuir eventos de auditoría hacia módulos de consola y archivos, permitiendo gestionar dinámicamente las suscripciones sin acoplar la lógica de negocio a los sistemas de registro.",
-          url: null,
+          url: "https://github.com/Niko07ds/4.E.1-Ejercitacion-Ejercicio03",
         },
         {
           numero: "Observer / 4-E-1 / 04",
@@ -494,7 +494,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Sistema de alertas de stock bajo para comercio electrónico",
           descripcion:
             "Implementación de Observer para detectar niveles críticos de inventario y notificar selectivamente a los departamentos interesados, encapsulando el estado del producto y sus reglas de negocio.",
-          url: null,
+          url: "https://github.com/Niko07ds/4.E.1-Ejercitacion-Ejercicio04",
         },
         {
           numero: "Observer / 4-E-1 / 05",
@@ -502,7 +502,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Monitor de sensores de humo en edificio inteligente",
           descripcion:
             "Implementación de Observer para coordinar múltiples sensores de humo con sistemas de alarma, rociadores y conserjería, permitiendo incorporar nuevos dispositivos de respuesta sin modificar los sensores.",
-          url: null,
+          url: "https://github.com/Niko07ds/4.E.1-Ejercitacion-Ejercicio05",
         },
         {
           numero: "Observer / 4-E-1 / 06",
