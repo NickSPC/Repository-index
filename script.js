@@ -600,7 +600,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Sistema de suscripción a canales de video streaming",
           descripcion:
             "Implementación de Observer con suscripciones filtradas por canal, notificando únicamente a los seguidores correspondientes cuando un creador publica un nuevo video.",
-          url: null,
+          url: "https://github.com/Niko07ds/4.E.2-Ejercitacion-Ejercicio07",
         },
         {
           numero: "Observer / 4-E-2 / 08",
@@ -608,7 +608,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Refactorización de código acoplado hacia bus de eventos",
           descripcion:
             "Refactorización de un sistema de inventario para reemplazar dependencias directas con módulos de facturación y estadísticas por observadores abstractos, aplicando desacoplamiento e inversión de control.",
-          url: null,
+          url: "https://github.com/Niko07ds/4.E.2-Ejercitacion-Ejercicio08",
         },
         {
           numero: "Observer / 4-E-2 / 09",
@@ -616,7 +616,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Motor asíncrono de eventos para monitoreo de servidores",
           descripcion:
             "Implementación de un bus centralizado basado en Observer para distribuir alertas de infraestructura según su categoría, con suscripciones concurrentes, enrutamiento eficiente y aislamiento de errores.",
-          url: null,
+          url: "https://github.com/Niko07ds/4.E.2-Ejercitacion-Ejercicio09",
         },
         {
           numero: "Observer / 4-E-2 / 10",
@@ -625,7 +625,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "Sistema empresarial de cumplimiento normativo y auditoría de riesgos",
           descripcion:
             "Implementación de Observer para distribuir cambios en perfiles de riesgo hacia sistemas regulatorios, incorporando notificaciones controladas, auditoría inmutable, aislamiento de fallos y gestión multihilo segura.",
-          url: null,
+          url: "https://github.com/Niko07ds/4.E.2-Ejercitacion-Ejercicio10",
         },
       ],
     },
