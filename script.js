@@ -552,7 +552,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Notificador de clic en botón de interfaz",
           descripcion:
             "Implementación básica del patrón Observer para notificar a múltiples manejadores cuando se produce un clic en un botón, manteniendo desacoplado el componente gráfico de sus receptores.",
-          url: null,
+          url: "https://github.com/Niko07ds/4.E.2-Ejercitacion-Ejercicio01",
         },
         {
           numero: "Observer / 4-E-2 / 02",
@@ -560,7 +560,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Indicador de estado de conexión de red",
           descripcion:
             "Implementación de Observer para sincronizar automáticamente los indicadores visuales del estado de conexión, permitiendo que distintos componentes reaccionen a los cambios sin realizar consultas periódicas.",
-          url: null,
+          url: "https://github.com/Niko07ds/4.E.2-Ejercitacion-Ejercicio02",
         },
         {
           numero: "Observer / 4-E-2 / 03",
@@ -568,7 +568,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Marcador de puntuación para videojuego sencillo",
           descripcion:
             "Implementación de Observer para distribuir las actualizaciones de puntuación hacia la interfaz del juego y el sistema de récords, evitando dependencias directas y permitiendo gestionar suscripciones dinámicamente.",
-          url: null,
+          url: "https://github.com/Niko07ds/4.E.2-Ejercitacion-Ejercicio03",
         },
         {
           numero: "Observer / 4-E-2 / 04",
@@ -576,7 +576,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Sistema de alertas de precio en lista de deseos",
           descripcion:
             "Implementación de Observer para detectar reducciones en el precio de productos y notificar selectivamente a los canales suscritos, utilizando los porcentajes de descuento para procesar las alertas.",
-          url: null,
+          url: "https://github.com/Niko07ds/4.E.2-Ejercitacion-Ejercicio04",
         },
         {
           numero: "Observer / 4-E-2 / 05",
@@ -584,7 +584,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Automatización de persianas según sensor de luz solar",
           descripcion:
             "Implementación de Observer para coordinar persianas motorizadas y luces interiores según las variaciones de luminosidad detectadas por un sensor, permitiendo incorporar nuevos dispositivos sin modificar el sujeto observable.",
-          url: null,
+          url: "https://github.com/Niko07ds/4.E.2-Ejercitacion-Ejercicio05",
         },
         {
           numero: "Observer / 4-E-2 / 06",
@@ -592,7 +592,7 @@ document.addEventListener("DOMContentLoaded", () => {
           titulo: "Panel financiero de variación de divisas",
           descripcion:
             "Implementación de Observer para distribuir cotizaciones y variaciones porcentuales de divisas hacia múltiples herramientas financieras, contemplando una gestión segura de suscriptores ante modificaciones concurrentes.",
-          url: null,
+          url: "https://github.com/Niko07ds/4.E.2-Ejercitacion-Ejercicio06",
         },
         {
           numero: "Observer / 4-E-2 / 07",
